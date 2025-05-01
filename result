@@ -1,0 +1,33 @@
+# Load the CSV and inspect its columns
+df_csv.columns
+
+Index(['ordernumber', 'quantityordered', 'priceeach', 'orderlinenumber',
+       'sales', 'orderdate', 'status', 'qtr_id', 'month_id', 'year_id',
+       'productline', 'msrp', 'productcode', 'customername', 'phone',
+       'addressline1', 'addressline2', 'city', 'state', 'postalcode',
+       'country', 'territory', 'contactlastname', 'contactfirstname',
+       'dealsize'],
+      dtype='object')
+
+# Display the corrected summary DataFrame
+df_summary_corrected
+
+            product  total_qty    revenue
+0      Classic Cars       2165  187421.91
+1       Motorcycles       1185   96829.49
+2            Planes       1659  137728.24
+3             Ships        557   47442.56
+4            Trains        130    9803.42
+5  Trucks And Buses        807   70255.22
+6      Vintage Cars       2480  198364.44
+
+
+| Product Line        | Total Quantity Sold | Total Revenue |
+|---------------------|---------------------|---------------|
+| Classic Cars        | 2165                | \$187,421.91  |
+| Motorcycles         | 1185                | \$96,829.49   |
+| Planes              | 1659                | \$137,728.24  |
+| Ships               | 557                 | \$47,442.56   |
+| Trains              | 130                 | \$9,803.42    |
+| Trucks and Buses    | 807                 | \$70,255.22   |
+| Vintage Cars        | 2480                | \$198,364.44  |
